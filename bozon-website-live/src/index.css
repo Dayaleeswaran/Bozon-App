@@ -55,6 +55,36 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* RESPONSIVE LAYOUT CLASSES */
+.responsive-grid-about {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.responsive-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.responsive-grid-contact {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 100px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .responsive-grid-about,
+  .responsive-grid-2,
+  .responsive-grid-contact {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

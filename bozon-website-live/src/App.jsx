@@ -986,7 +986,7 @@ function AboutPage() {
       <AnimatedDivider />
 
       <section style={{ padding: "100px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 80, alignItems: "start" }}>
+        <div className="responsive-grid-about" style={{ maxWidth: 1280, margin: "0 auto" }}>
           <Reveal><SplitText><h2 style={{ fontFamily: "'DM Serif Display', serif", fontSize: 40, position: "sticky", top: 120 }}>Our Story</h2></SplitText></Reveal>
           <Reveal delay={0.1}>
             <p style={{ color: MUTED, fontSize: 18, lineHeight: 1.9, marginBottom: 24 }}>bozon.dev is a full-service technology and digital solutions brand specializing in software development, business systems, and digital marketing services.</p>
@@ -1000,7 +1000,7 @@ function AboutPage() {
       <AnimatedDivider />
 
       <section style={{ padding: "80px 40px", background: SURFACE }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40 }}>
+        <div className="responsive-grid-2" style={{ maxWidth: 1280, margin: "0 auto" }}>
           {[
             { label: "Our Mission", text: "To deliver innovative, scalable, and results-driven solutions tailored to each client's unique business goals. We aim to provide end-to-end digital solutions under one roof with a professional and reliable approach." },
             { label: "Our Vision", text: "To transform the digital landscape for businesses through premium, clean, and powerful technology. We strive to increase brand visibility and drive measurable success through customized strategies and reliable technical support." },
@@ -1549,7 +1549,7 @@ function ContactPage() {
   return (
     <div style={{ background: BG, paddingTop: 72 }}>
       <section style={{ padding: "100px 40px 120px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: 100, alignItems: "start" }}>
+        <div className="responsive-grid-contact" style={{ maxWidth: 1280, margin: "0 auto" }}>
           <Reveal>
             <span style={{ color: BRAND, fontSize: 12, letterSpacing: "2px", textTransform: "uppercase", display: "block", marginBottom: 16 }}>Contact Us</span>
             <SplitText>
