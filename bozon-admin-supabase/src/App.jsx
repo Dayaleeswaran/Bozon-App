@@ -1443,7 +1443,7 @@ function LoginPage({ onLogin }) {
           ) : (
             <>
               <h2 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 22, fontWeight: 700, marginBottom: 6 }}>Sign In</h2>
-              <p style={{ color: C.muted, fontSize: 13, marginBottom: 28 }}>Use your Supabase Auth credentials.</p>
+              <p style={{ color: C.muted, fontSize: 13, marginBottom: 28 }}>Use your Appwrite Auth credentials.</p>
               <Field label="Email"><Input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="admin@bozon.dev" /></Field>
               <Field label="Password">
                 <Input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="••••••••" onKeyDown={e => e.key === "Enter" && attempt()} />
@@ -1461,7 +1461,7 @@ function LoginPage({ onLogin }) {
 
         <p style={{ textAlign: "center", color: C.muted2, fontSize: 12, marginTop: 20 }}>
           Create users in your{" "}
-          <a href="https://supabase.com/dashboard" target="_blank" rel="noopener noreferrer" style={{ color: C.muted }}>Supabase dashboard</a>{" "}
+          <a href="https://cloud.appwrite.io/console" target="_blank" rel="noopener noreferrer" style={{ color: C.muted }}>Appwrite console</a>{" "}
           under Authentication → Users.
         </p>
       </div>
