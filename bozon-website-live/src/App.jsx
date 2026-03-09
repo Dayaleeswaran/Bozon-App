@@ -1333,7 +1333,7 @@ function PortfolioPage({ previewData, onActiveChange }) {
                   <div style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 48, marginTop: 48 }}>
                     <div style={{ display: "grid", gridTemplateColumns: "200px 1fr", gap: 40, alignItems: "start" }} className="mobile-stack">
                       <span style={{ color: BRAND, fontSize: 12, letterSpacing: "2px", textTransform: "uppercase", paddingTop: 4 }}>{label}</span>
-                      <div style={{ color: MUTED, fontSize: 17, lineHeight: 1.9 }} dangerouslySetInnerHTML={{ __html: content }} />
+                      <div style={{ color: MUTED, fontSize: 17, lineHeight: 1.9, minWidth: 0, wordWrap: "break-word", overflowWrap: "break-word" }} dangerouslySetInnerHTML={{ __html: content }} />
                     </div>
                   </div>
                 </Reveal>
